@@ -35,8 +35,11 @@ module.exports = class AtomWindow extends EventEmitter {
     });
 
     const options = {
-      show: false,
-      title: getAppName(),
+       frame: false
+       transparent: true
+       show: false
+       title: 'Atom'
+       #backgroundColor: "#fff"
       tabbingIdentifier: 'atom',
       webPreferences: {
         // Prevent specs from throttling when the window is in the background:
